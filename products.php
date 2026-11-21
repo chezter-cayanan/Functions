@@ -1,4 +1,3 @@
-
 <?php
 
 $store = "Water Bottle Store";
