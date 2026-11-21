@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#003b73, #00a8cc);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.store {
+    width: 900px;
+    max-width: 100%;
+    min-height: 500px;
+    background: #075b7e;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #075b7e;
+    color: white;
+    padding: 20px 30px;
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    color: #a8e6ff;
+    font-size: 28px;
+    margin: 0;
+}
+
+header p {
+    font-size: 12px;
+    margin: 5px 0 0;
+    color: #d4f5ff;
+}
+
+.content {
+    background: #075b7e;
+    padding: 25px 30px;
+    flex: 1;
+}
+
+h2 {
+    color: #d4f5ff;
+    font-size: 20px;
+    margin: 20px 0 12px;
+}
+
+.content h2:first-child {
+    margin-top: 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th {
+    background: #003b73;
+    color: #a8e6ff;
+    padding: 14px 12px;
+    text-align: left;
+    border: 1px solid #ffffff50;
+}
+
+td {
+    padding: 14px 12px;
+    border: 1px solid #ffffff50;
+    color: white;
+    vertical-align: middle;
+}
+
+td:first-child {
+    min-width: 180px;
+}
+
+tr:hover td {
+    background: #ffffff15;
+}
+
+.stock-link {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: auto;
+    padding: 12px 20px;
+    background: #003b73;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.stock-link:hover {
+    background: #00a8cc;
+}
+
+footer {
+    background: #075b7e;
+    border-top: 1px solid white;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .store {
+        width: 100%;
+        min-height: 500px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    table {
+        min-width: 650px;
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 10px 8px;
+    }
+}
